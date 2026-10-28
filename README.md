@@ -1,5 +1,16 @@
 # Meridian Identity Fabric: Okta + Entra ID Federation with JIT Privileged Access
 
+![Okta](https://img.shields.io/badge/Okta-007DC1?style=for-the-badge&logo=okta&logoColor=white)
+![Microsoft Entra ID](https://img.shields.io/badge/Microsoft_Entra_ID-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
+![Entra PIM](https://img.shields.io/badge/Entra_PIM-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
+![Active Directory](https://img.shields.io/badge/Active_Directory-0078D4?style=for-the-badge&logo=windows&logoColor=white)
+![SAML 2.0](https://img.shields.io/badge/SAML_2.0-F7931E?style=for-the-badge&logo=auth0&logoColor=white)
+![Microsoft Graph](https://img.shields.io/badge/Microsoft_Graph-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell_7-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
+![Cloudflare Workers](https://img.shields.io/badge/Cloudflare_Workers-F38020?style=for-the-badge&logo=cloudflareworkers&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
 This is the capstone of my IAM/PAM portfolio. Active Directory is the source of truth, Okta is the identity provider, and Microsoft Entra ID is the service provider. A person created in AD flows into Okta and then into Entra. They sign in to Microsoft through Okta over SAML 2.0 with a phishing-resistant factor. They get admin rights in Entra only through a just-in-time PIM activation tied to a ticket. When they leave, one change in AD shuts all of it off.
 
 I built it over two weeks in October 2026 on a live Entra tenant, a live Okta org, and a two-VM Active Directory lab in Azure. Nothing in here is a mockup. Every claim in this README points to a screenshot in `screenshots/`.
